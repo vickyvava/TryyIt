@@ -117,7 +117,7 @@ room = {
 				$("#web-header").addClass("cyan z-depth-1").removeClass("transparent z-depth-0");
 				$("#site-wrapper #site-navbar").removeClass("big");
 				$("#site-navbar").find(".hide-on-med-and-down li a").addClass("white-text").removeClass("black-text");
-				$("#site-navbar .brand-logo img").attr("src","img/tryIt.png");
+				$("#site-navbar .brand-logo img").attr("src","img/tryIt_white.png");
 			}
 			else{
 				$("#web-header").addClass("transparent z-depth-0").removeClass("cyan z-depth-1");
