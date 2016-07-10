@@ -117,13 +117,13 @@ room = {
 				$("#web-header").addClass("cyan z-depth-1").removeClass("transparent z-depth-0");
 				$("#site-wrapper #site-navbar").removeClass("big");
 				$("#site-navbar").find(".hide-on-med-and-down li a").addClass("white-text").removeClass("black-text");
-				$("#site-navbar .brand-logo img").attr("src","img/tryit.png");
+				$("#site-navbar .brand-logo img").attr("src","img/tryIt.png");
 			}
 			else{
 				$("#web-header").addClass("transparent z-depth-0").removeClass("cyan z-depth-1");
 				$("#site-wrapper #site-navbar").addClass("big");
 				$("#site-navbar").find(".hide-on-med-and-down li a").addClass("black-text").removeClass("white-text");
-				$("#site-navbar .brand-logo img").attr("src","img/tryit_white.png");
+				$("#site-navbar .brand-logo img").attr("src","img/tryIt_white.png");
 			}
 		});
 	},
