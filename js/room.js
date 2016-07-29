@@ -53,7 +53,13 @@ room = {
 		$(".demo-controls").on("click",function(){
 			var slider = $('#slid').data('owlCarousel');
 			$(this).hasClass("left") ? slider.prev() : slider.next();
-		});		
+			$(document).trigger("scroll");
+		});
+
+		$(".pricing-controls").on("click",function(){
+			var slider = $('#mobile-pricing-slider .owl-carousel').data('owlCarousel');
+			$(this).hasClass("lefts") ? slider.prev() : slider.next();
+		});			
 
 		if(room.detectDevice()){
 			$("#products").find("a").each(function(){

@@ -1,6 +1,10 @@
-body{
+body, html{
   padding:0;
   margin:0;
+  overflow-x:hidden;
+}
+
+body{
   background:#EBEBEB;
   line-height:1.5rem;
   font: 300 16px/1.6 "RobotoDraft",arial,sans-serif;
@@ -180,8 +184,8 @@ body{
 	background-image:url("../img/tee/1.jpg");
 	display:block;
 	width: 100%;
-    min-height: 350px;
-    max-height: 350px;
+    min-height: 300px;
+    max-height: 300px;
     background-repeat: no-repeat;
     background-position: 50% 0%;
     background-size: 60% 80%;
@@ -190,13 +194,89 @@ body{
 	text-align: center;
 }
 #slid div img{ 
-    width: 319px;
+    width: 60%;
     position: relative;
-    top: 70px;
+    top: 50px;
 }
-.demo-controls{ 
+
+.mobile .demo-controls{ 
+    position: relative;
+    top: 30px;
+}
+.desktop .demo-controls{ 
     position: relative;
     top: -190px;
 } 
 .demo-controls.left{ left:60px;}
 .demo-controls.right{ right: 60px}
+
+@media only screen and (max-width: 600px) {
+  	#slid{ 
+		background-position: 50% 0%;
+	    background-size: 100% 80%;
+	}
+	#slid div img {
+	    width: 100%;
+	    position: relative;
+	    top: 55px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+
+}
+
+@media only screen and (min-width: 601px) {
+  .hide-on-med-and-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .hide-on-med-only {
+    display: none !important;
+  }
+  	#slid{ 
+		background-position: 50% 0%;
+	    background-size: 90% 80%;
+	}
+}
+
+@media only screen and (min-width: 993px) {
+  .hide-on-large-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .show-on-large {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .show-on-medium {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .show-on-small {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .show-on-medium-and-up {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .show-on-medium-and-down {
+    display: block !important;
+  }
+}
