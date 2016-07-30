@@ -77,7 +77,7 @@
 </head>
 
 <body>
-	<div id="loading" class="hide">
+	<div id="loading" class="">
 		<img id="loading-image" src="img/load.gif" alt="Loading..." />
 		<h3 class="flow-text cyan-text"><b>Try It...</b></h3>
 	</div>
@@ -715,8 +715,10 @@
 	<!-- Jquery Files-->
 	<script language="javascript" type="text/javascript">
 		window.onload = function(){ 
-			document.getElementById("loading").className = "hide";
-			document.getElementById("site-wrapper").className = "site-wrapper"; 
+			setTimeout(function(){
+				document.getElementById("loading").className = "hide";
+				document.getElementById("site-wrapper").className = "site-wrapper"; 	
+			},7000);
 		};  
 	</script>
 	<script type="text/javascript" src="js/site.min.js"></script>
