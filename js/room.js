@@ -169,6 +169,7 @@ room = {
 				}
 			});
 			$(".slider-title h3").addClass("flow-text");
+			$("#site-slider .item").css("min-height","660px");
 		}
 	}
 };
