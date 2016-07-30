@@ -46,12 +46,42 @@
 			-webkit-font-feature-settings: 'liga';
 			-webkit-font-smoothing: antialiased;
 		}
+		#loading {
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			position: fixed;
+			display: block;
+			opacity: 0.8;
+			background-color: #fff;
+			z-index: 99;
+			text-align: center;
+		}
+
+		#loading-image {
+		    position: relative;
+		    margin: 0 auto;
+		    min-height: 500px;
+		    width:auto;
+		}
+
+		#loading h3
+		{
+		    position: relative;
+		    width: 100%;
+			top:-90px;
+		    font-size: 2.68rem !important;
+		}
 	</style>
 </head>
 
 <body>
-
-	<div id="site-wrapper" class="site-wrapper">
+	<div id="loading" class="hide">
+		<img id="loading-image" src="img/load.gif" alt="Loading..." />
+		<h3 class="flow-text cyan-text"><b>Try It...</b></h3>
+	</div>
+	<div id="site-wrapper" class="hide">
 		
 		<header id="site-navbar" class="big">
 			<div class="navbar-fixed">
@@ -683,6 +713,13 @@
 	</div>
 	
 	<!-- Jquery Files-->
+	<script language="javascript" type="text/javascript">
+		window.onload = function(){ 
+			document.getElementById("loading").className = "hide";
+			document.getElementById("site-wrapper").className = "site-wrapper"; 
+		};  
+	</script>
 	<script type="text/javascript" src="js/site.min.js"></script>
+	
 </body>
 </html>
