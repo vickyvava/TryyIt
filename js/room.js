@@ -112,6 +112,55 @@ room = {
 			$(this).find(".card-image").removeClass("cyan-text").addClass("black-text");
 			$(this).find(".card-content a.btn").addClass("black-text wht-bdr").removeClass("cyan-text blk-bdr");
 		});
+
+		$("#submitBtn").click(function(e) {
+			e.preventDefault();
+			$(".error").remove();
+			var hasError = false;
+			var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+			var emailFromVal = $("#email").val();
+		
+			if (emailFromVal == '') {
+				$("#email").after('<span class="red-text error">You forgot to enter the email address.</span>');
+				hasError = true;
+			} else if (!emailReg.test(emailFromVal)) {
+				$("#email").after('<span class="red-text error">Enter a valid email address to send to.</span>');
+				hasError = true;
+			}
+		
+			var Name = $("#name").val();
+			if (Name == '') {
+				$("#name").after('<span class="red-text error">You forgot to enter the Name</span>');
+				hasError = true;
+			}
+
+			var messageVal = $("#textarea1").val();
+			if (messageVal == '') {
+				$("#textarea1").after('<span class="red-text error">You forgot to enter the message.</span>');
+				hasError = true;
+			}
+			if (hasError == false) {
+				$(".error").hide();
+				$("#submitBtn").val('Sending...');
+				$.ajax({
+					url:'sendemail.php',
+					type:'POST',
+					data:{
+						email   : emailFromVal,
+						user    : Name,
+						message : messageVal
+					},
+					success:function(data){
+						$("#submit").val('Submit');
+						$("#contactform")[0].reset();
+					},
+					error:function(msg){
+						console.log('Error=='+msg);
+					}
+				});
+			}
+			return false;
+		});
 	},
 
 	initializeLazyLoad : function(){

@@ -630,30 +630,30 @@
 						<p>	For Demos and Queries <br>
 							Please fill in the following information accordingly.We will contact you shortly.
 						</p>
-						<form>
+						<form method="post" name="contactform" id="contactform">
 							<div class="row">
 								<div class="input-field col s12 m12 l12">
 									 <i class="material-icons prefix">face</i>
-									<input id="first_name" type="text" class="validate">
+									<input id="first_name" name="first_name" type="text" class="validate">
 									<label for="first_name">Name</label>
 								</div>
 							</div>
 							<div class="row">
 								<div class="input-field col s12 m12 l12">
 									<i class="material-icons prefix">email</i>
-									<input id="email" type="email" class="validate">
+									<input name="email" type="email" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" class="validate" />
 									<label for="email">Email Address</label>
 								</div>
 							</div>
 							<div class="row">
 								<div class="input-field col s12 m12 l12">
 									<i class="material-icons prefix">message</i>
-									<textarea id="textarea1" class="materialize-textarea"></textarea>
+									<textarea name="comment" id="textarea1" class="materialize-textarea"></textarea>
 									<label for="textarea1">Inquiry Message</label>
 								</div>
 							</div>	
 							<div class="row">
-								<a class="btn grey lighten-3 black-text right">Submit</a>
+								<a id="submitBtn" class="btn grey lighten-3 black-text right">Submit</a>
 							</div>						
 						</form>
 					</div>
