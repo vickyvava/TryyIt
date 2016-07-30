@@ -630,7 +630,7 @@
 						<p>	For Demos and Queries <br>
 							Please fill in the following information accordingly.We will contact you shortly.
 						</p>
-						<form action="https://formspree.io/ankit77parekh@gmail.com" method="post" name="contactform" id="contactform">
+						<form method="post" name="contactform" id="contactform">
 							<div class="row">
 								<div class="input-field col s12 m12 l12">
 									 <i class="material-icons prefix">face</i>
