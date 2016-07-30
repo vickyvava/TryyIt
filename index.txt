@@ -631,6 +631,9 @@
 							Please fill in the following information accordingly.We will contact you shortly.
 						</p>
 						<form method="post" name="contactform" id="contactform">
+							<input type="hidden" name="_next" value="https://akkiparekh.github.io/TryIt/#!" />
+							<input type="hidden" name="_subject" value="Submission Through for Try It !" />
+							<input type="text"   name="_replyto" placeholder="Your email" />
 							<div class="row">
 								<div class="input-field col s12 m12 l12">
 									 <i class="material-icons prefix">face</i>
