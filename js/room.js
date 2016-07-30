@@ -147,9 +147,10 @@ room = {
 					type:'POST',
 					dataType: "json",
 					data:{
-						email   : emailFromVal,
-						user    : Name,
-						message : messageVal
+						name     : Name,
+						_replyto : emailFromVal,
+						message  : messageVal,
+						_subject : 'Submission Through for Try It !'
 					},
 					success:function(data){
 						$("#submitBtn").val('Submit');
