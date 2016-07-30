@@ -50,6 +50,10 @@ body{
 	border-bottom:2px solid orange;
 }
 
+#site-navbar.big .navbar-fixed nav .button-collapse {
+    top: 25%;
+}
+
 #site-slider {
 	position:relative;
 	top:-120px;
