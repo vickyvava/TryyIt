@@ -674,13 +674,13 @@
 					<div class="col s12 m7 l7">
 						<div>
 							<section class="owl-carousel" id="slid">
-								<div class="item"><img class="responsive-img" src="img/tee/3.png"></div>
+								<div class="item"><img class="responsive-img" src="img/tee/7.png"></div>
 								<div class="item"><img class="responsive-img" src="img/tee/2.png"></div>
 								<div class="item"><img class="responsive-img" src="img/tee/1.png"></div>
 								<div class="item"><img class="responsive-img" src="img/tee/4.png"></div>
 								<div class="item"><img class="responsive-img" src="img/tee/5.png"></div>
 								<div class="item"><img class="responsive-img" src="img/tee/6.png"></div>
-								<div class="item"><img class="responsive-img" src="img/tee/7.png"></div>
+								<div class="item"><img class="responsive-img" src="img/tee/3.png"></div>
 								<div class="item"><img class="responsive-img" src="img/tee/8.png"></div>
 							</section>
 							<p class="center-align hide-on-med-and-down show-on-large desktop">
