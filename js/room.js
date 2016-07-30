@@ -86,7 +86,10 @@ room = {
 		});
 
 		$("#web-header a").on("click",function(){
-			$('html,body').animate({ scrollTop: $("#"+$(this).attr("data-target")).offset().top},'slow');
+			if(typeof $(this).attr("data-target") != "undefiined"){
+				$('html,body').animate({ scrollTop: $("#"+$(this).attr("data-target")).offset().top},'slow');	
+			}
+			
 		});
 
 		$(".seeMore").on("click",function(){
