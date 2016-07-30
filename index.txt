@@ -653,7 +653,7 @@
 								</div>
 							</div>	
 							<div class="row">
-								<a id="submitBtn" class="btn grey lighten-3 black-text right">Submit</a>
+								<input type="submit" id="submitBtn" class="btn grey lighten-3 black-text right" value='Submit'>
 							</div>						
 						</form>
 					</div>
