@@ -168,6 +168,7 @@ room = {
 					$(this).removeClass("right-align left-align").addClass("center-align");
 				}
 			});
+			$(".slider-title h3").addClass("flow-text");
 		}
 	}
 };
