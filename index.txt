@@ -58,7 +58,7 @@
 				<nav id="web-header" class="transparent z-depth-0">
 					<div class="nav-wrapper container">
 						<a data-target="site-slider" href="#!" class="brand-logo">
-							<img class="responsive-img wow fadeIn" src="img/tryit_white.png">
+							<img class="responsive-img wow fadeIn" src="img/comp/tryit_white.png">
 						</a>
 						<ul class="right hide-on-med-and-down">
 							<li><a data-target="site-slider" class="black-text" href="#!">About</a></li>
@@ -69,7 +69,7 @@
 							<li><a data-target="contact" class="black-text" href="#!">Contact</a></li>
 						</ul>
 						<ul id="slide-out" class="side-nav">
-							<li><a href="#" class="black-text"><img class="responsive-img wow fadeIn" src="img/tryit.png"></a></li>
+							<li><a href="#" class="black-text"><img class="responsive-img wow fadeIn" src="img/comp/tryit.png"></a></li>
 							<li><a data-target="site-slider" class="black-text" href="#!">About</a></li>
 							<li><a data-target="introduction" class="black-text" href="#!">Features</a></li>
 							<li><a data-target="product-features" class="black-text" href="#!">Products</a></li>
